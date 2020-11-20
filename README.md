@@ -1,0 +1,3 @@
+Para executar o projeto...
+- com relação à pasta 'sensor_node': python3 raspberry.py (manter sua execução em background)
+- com relação à pasta 'dashboard': npm install && npm start
