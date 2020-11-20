@@ -23,4 +23,4 @@ def sensorMeasure():
 
 
 #! teste: gerando dados de 2 em 2 min
-nodeOperation(sensorMeasure, 2)
+nodeOperation(sensorMeasure, 1)
