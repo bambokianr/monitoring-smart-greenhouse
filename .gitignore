@@ -29,3 +29,4 @@ yarn-error.log*
 ### python
 # cache
 gateway/__pycache__
+*.pyc
