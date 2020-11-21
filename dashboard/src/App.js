@@ -1,22 +1,14 @@
-import React, { useEffect } from 'react';
-import api from './services/api';
+import React from 'react';
+
+import GlobalStyle from './styles/global';
+import Dashboard from './pages/Dashboard';
 
 function App() {
-  const ONE_MINUTE = 1/2 * 60 * 1000;
-
-  // useEffect(() => {
-  //   api.get('data').then(res => console.log('RES', res.data));
-  // }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      api.get('data').then(res => console.log('RES', res.data));
-    }, ONE_MINUTE);
-    return () => clearInterval(interval);
-  }, [ONE_MINUTE]);
-
   return (
-    <div>Monitoring Smart Greenhouse</div>
+    <>
+      <Dashboard />
+      <GlobalStyle />
+    </>
   );
 }
 
