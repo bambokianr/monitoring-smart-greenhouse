@@ -1,7 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-import { formatDateToLegend } from '../../utils/formatDate';
+import { formatDate } from '../../utils';
 
 import { Container, CustomTooltipContainer } from './styles';
 
@@ -9,7 +9,7 @@ const CustomTooltip = ({ active, payload, label }) => {
   if (active) {
     return (
       <CustomTooltipContainer color={payload[0]?.fill}>
-        <p>{formatDateToLegend(label)}</p>
+        <p>{formatDate(label)}</p>
         {payload[0]?.payload && <p>{`Temperatura: ${payload[0]?.payload.temperature}ºC`}</p>}
         {payload[0]?.payload && <p>{`Umidade: ${payload[0]?.payload.humidity}%`}</p>}
       </CustomTooltipContainer>
@@ -21,7 +21,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 function Chart({ data = [], dataKey, legendName, color }) {
   return (
     <Container>
-      {data.length === 0 && <h4>Não existem dados suficientes para gerar o gráfico.</h4>}
+      {data.length === 0 && <h4>{`Não existem dados suficientes para gerar o gráfico de ${legendName}.`}</h4>}
       {data.length !== 0 && 
         <>
           <LineChart

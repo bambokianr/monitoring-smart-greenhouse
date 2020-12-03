@@ -78,5 +78,9 @@ export const Content = styled.div`
   flex-direction: row;
 
   div:first-of-type { width: 50%; }
-  /* div { width: 500px; } */
+
+  @media(max-width: 1200px) {
+    div:first-of-type { width: 100%; }
+    flex-direction: column;
+  }
 `;

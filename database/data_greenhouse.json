@@ -1,24 +1,16 @@
 {
   "data": [
     {
-      "date": "11/20/2020-09:53", 
-      "temperature": 77, 
-      "humidity": 93
-    }, 
+      "humidity": "0.8766666666666667",
+      "temperature": "13",
+      "id": "R5459H4MECLU99GV2IGIZVGK",
+      "date": "12/02/2020-22:20"
+    },
     {
-      "date": "11/20/2020-09:54", 
-      "temperature": 84, 
-      "humidity": 3
-    }, 
-    {
-      "date": "11/20/2020-09:59", 
-      "temperature": 79, 
-      "humidity": 10
-    }, 
-    {
-      "date": "11/20/2020-10:00", 
-      "temperature": 42, 
-      "humidity": 32
+      "humidity": "0.6833333333333333",
+      "temperature": "44",
+      "id": "IC8EZLHD26PZMIE6DDHYOCGZ",
+      "date": "12/02/2020-22:20"
     }
   ]
 }

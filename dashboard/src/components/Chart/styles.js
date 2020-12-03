@@ -5,6 +5,7 @@ export const Container = styled.div`
     color: #28262e;
     font-weight: 300;
     font-size: 14px;
+    padding: 6px 0;
   }
 `;
 
