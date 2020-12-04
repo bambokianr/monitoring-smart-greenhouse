@@ -1,4 +1,7 @@
-export const validToken = '123456abcd';
+export const validUser = {
+  name: "usuário teste",
+  token: "123456abcd",
+};
 
 export function formatDate(date) {
   const splitDate = date.split("-");
@@ -13,23 +16,23 @@ export function formatDate(date) {
 }
 
 export const filterOptions = [
-  { key: 'week', tag: 'última semana' },
-  { key: 'month', tag: 'últimos 30 dias' },
-  { key: 'all', tag: 'todos os dados' },
+  { key: "week", tag: "última semana" },
+  { key: "month", tag: "últimos 30 dias" },
+  { key: "all", tag: "todos os dados" },
 ];
 
 export function filterData(key, data) {
   console.log(key);
 
   switch (key) {
-    case 'week':
-      console.log('1');
+    case "week":
+      console.log("1");
       return data;
-    case 'month':
-      console.log('2');
+    case "month":
+      console.log("2");
       return data;
-    case 'all':
-      console.log('3');
+    case "all":
+      console.log("3");
       return data;
     default:
       return data;
